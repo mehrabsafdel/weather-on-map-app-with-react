@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.backbtn{
+    background-color: rgb(25, 212, 103);
+    border-radius: 500px;
+    border: 0px;
+    margin: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,36 @@
+.body{
+    width: 85%;
+}
+
+
+.menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mapContainer {
+    position: absolute;
+        max-width: 85%;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebarStyle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    background-color: #404040;
+    color: #ffffff;
+    z-index: 1 !important;
+    padding: 6px;
+    font-weight: bold;
+}

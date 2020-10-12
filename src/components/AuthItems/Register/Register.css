@@ -1,0 +1,35 @@
+.body {
+    display: flex;
+    background-color: rgb(97, 13, 17);
+    flex-direction: column;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    border-radius: 15px;
+}
+
+/* label{
+    margin: 1% 10% 1% 10%;
+    color: white;
+}
+
+input{
+    margin: 1% 10% 3% 10%;
+    padding: 3% 2%;
+    border-radius: 20px;
+    border: 0px;
+} */
+
+.btn{
+    border-radius: 25px;
+    padding: 3% 2%;
+    margin: 3% 10%;
+    border: 0px;
+    background-color: rgb(0, 143, 88);
+}
+
+.btn:hover{
+        background-color: rgb(0, 255, 157);
+
+}
