@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ForecastHour from '../../Result/Components/ForecastHour'
+import ForecastHour from '../../Result/ForecastHour'
 
 const ForecastWrapper = styled.div `
   flex-basis: 100%;

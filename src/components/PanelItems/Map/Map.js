@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import Classes from './Map.css';
 import Modal from '../../UI/Forecast/Modal/Modal'
-import Result from '../../UI/Forecast/Result/Result'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWVocmFic2ZkbCIsImEiOiJja2V6djY3MWYwZGQ5MnlwbGJqcWZ6MGV2In0.CALKqE_nG5dkQmOIqm6xxg';
 
