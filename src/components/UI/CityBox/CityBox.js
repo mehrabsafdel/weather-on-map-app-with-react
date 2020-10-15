@@ -1,6 +1,5 @@
 import React from 'react'
 import Classes from './CityBox.css'
-import { NavLink } from 'react-router-dom';
 
 const citybox = (props) => {
     return (

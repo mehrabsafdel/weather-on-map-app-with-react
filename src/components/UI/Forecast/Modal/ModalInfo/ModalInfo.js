@@ -21,14 +21,11 @@ const Forecast = styled.div `
 `;
 
 const modalInfo = (props) => {
+    // let url = "http://streaming.tdiradio.com:8000/house.mp3";
+    // let audio = new Audio(url);
+    // audio.play();
     console.log(props.forecast)
-    // const forecasts = props.forecast.map((info) => {
-    //     return (
-    //         <div>
-    //             {info.main.temp}
-    //         </div>
-    //     )
-    // })
+
     let forecasts = null
     if (props.forecast) {
         const fr = props.forecast;

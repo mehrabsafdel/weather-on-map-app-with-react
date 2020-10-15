@@ -9,6 +9,9 @@ import Mamad from './mamad'
 class App extends Component {
 
   render() {
+        // let url = '../../../../../../assets/Sounds/wind.mp3';
+        // let audio = new Audio(url);
+        // audio.play();
     console.log(this.props.isAuthenticated)
     let result = null;
     if (this.props.isAuthenticated) {
