@@ -3,9 +3,7 @@ import Map from '../../components/PanelItems/Map/Map.js'
 import Menu from '../../components/PanelItems/Menu/Menu'
 import Classes from './Panel.css'
 import { connect } from 'react-redux';
-import * as actionTypes from '../../Store/Action/actionTypes';
 import Modal from '../../components/UI/Forecast/Modal/Modal'
-import Result from '../../components/UI/Forecast/Result/Result';
 
 class Panel extends Component{
 
