@@ -1,5 +1,6 @@
 .body{
-    width: 85%;
+    width: 100%;
+    z-index: 1;
 }
 
 
@@ -14,7 +15,7 @@
 
 .mapContainer {
     position: absolute;
-        max-width: 85%;
+        max-width: 100%;
 
     top: 0;
     right: 0;

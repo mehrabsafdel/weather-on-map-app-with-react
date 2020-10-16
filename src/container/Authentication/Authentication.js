@@ -178,14 +178,16 @@ class authentication extends Component {
 
         return (
             <div className={Classes.body}>
+                <div>
                 <p className={Classes.title}>
                     MEHRAB WEATHER APP
                     <br/>this app making by React
-                    <br />you can the source code in my
+                    <br />you can see the source code in my
                     <br />
                     <a className={Classes.link} href='https://github.com/mehrabsafdel/weather-on-map-app-with-react'> Github
                     </a>                    
                     </p>
+                    </div>
                 {form}
                 {/* <NavLink to="/panel" >next step </NavLink> */}
             </div>

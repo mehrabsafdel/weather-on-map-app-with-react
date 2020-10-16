@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 50%;
   /* display: inline-block; */
   /* background-repeat: repeat; */
 }
@@ -14,15 +15,20 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-width: 600px;
+    min-width: 400px;
         background-image: url('../../assets//pictures/3305e028ba7bab27e84449028f8e5cfd.jpg');
   background-size: cover;
-    height: 100vh;
+  background-position: center;
+    /* height: 100vh; */
     
 }
 
 .title{
+        /* min-width: 100px;     */
+    /* width: 40%; */
     margin-right: 100px;
+        margin-left: 100px;
+
     color: white;
     font-size: xx-large;
     text-align: center;
