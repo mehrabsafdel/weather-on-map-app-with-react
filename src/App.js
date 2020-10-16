@@ -41,9 +41,8 @@ class App extends Component {
     }
 
     return (
-      <div >
-        <Panel/>
-        {/* {result} */}
+      <div>
+        {result} 
       </div>
     );
   }
