@@ -1,12 +1,20 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
 const profile = props => {
     return (
         <div>
             <p>!! IMAGE !!</p>
-            <p>!! USER NAME !!</p>
+            <p>!! {props.username} !!</p>
         </div>
     )
 }
 
-export default profile;
+const mapStateToProps = state => {
+    return {
+        username: state.userInfo.email,
+    };
+};
+
+
+export default connect(mapStateToProps)(profile);

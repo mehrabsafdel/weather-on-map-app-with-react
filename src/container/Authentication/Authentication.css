@@ -1,9 +1,44 @@
 .main{
     display: flex;
     flex-direction: row;
-    /* background-color: #049DD9; */
-    min-width: 1000px;
     justify-content: center;
     align-items: center;
     height: 100vh;
+  /* display: inline-block; */
+  /* background-repeat: repeat; */
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+        background-image: url('../../assets//pictures/3305e028ba7bab27e84449028f8e5cfd.jpg');
+  background-size: cover;
+    height: 100vh;
+    
+}
+
+.title{
+    margin-right: 100px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+font-family: 'Piedra',
+cursive;
+
+}
+
+
+.link {
+    color: blueviolet;
+}
+
+.link:hover{
+        color: #241793;
+
 }

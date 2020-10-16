@@ -16,6 +16,12 @@ class authentication extends Component {
                     placeholder: 'email'
                 },
                 value: '',
+                validation: {
+                    required: true,
+                    isEmail: true
+                },
+                valid: false,
+                touched: false
             },
             password: {
                 elementType: 'input',
@@ -24,6 +30,12 @@ class authentication extends Component {
                     placeholder: 'password'
                 },
                 value: '',
+                validation: {
+                    required: true,
+                    minLength: 6
+                },
+                valid: false,
+                touched: false
             },
 
             gender: {
@@ -48,6 +60,13 @@ class authentication extends Component {
                     placeholder: 'Your mail'
                 },
                 value: '',
+                validation: {
+                    required: true,
+                    isEmail: true
+                },
+                valid: false,
+                touched: false
+
             },
             password: {
                 elementType: 'input',
@@ -56,18 +75,44 @@ class authentication extends Component {
                     placeholder: 'password'
                 },
                 value: '',
+                validation: {
+                    required: true,
+                    minLength: 6
+                },
+                valid: false,
+                touched: false
+
             },
         }
     }
+    checkValidity(value, rules) {
+        let isValid = true;
+        if (!rules) {
+            return true;
+        }
 
-    nextStep = () => {
-        // const name = {
-        //     meh: "saf"
-        // }
-        // axios.post('/userData.json', name)
-        //     .then(Response => console.log(Response))
-        //     .catch(error => console.log(error));
-         this.props.history.push('/panel');
+        if (rules.required) {
+            isValid = value.trim() !== '' && isValid;
+        }
+
+        if (rules.minLength) {
+            isValid = value.length >= rules.minLength && isValid
+        }
+
+        if (rules.maxLength) {
+            isValid = value.length <= rules.maxLength && isValid
+        }
+
+        if (rules.isEmail) {
+            const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+            isValid = pattern.test(value) && isValid
+        }
+
+        if (rules.isNumeric) {
+            const pattern = /^\d+$/;
+            isValid = pattern.test(value) && isValid
+        }
+        return isValid;
     }
 
     loginInputChangeHandler = (event, inputIdentifier) => {
@@ -78,6 +123,8 @@ class authentication extends Component {
             ...updatedLoginForm[inputIdentifier]
         };
         updatedFormElement.value = event.target.value;
+        updatedFormElement.valid = this.checkValidity(event.target.value, this.state.loginForm[inputIdentifier].validation),
+        updatedFormElement.touched = true;
         updatedLoginForm[inputIdentifier] = updatedFormElement;
         this.setState({ loginForm: updatedLoginForm });
     }
@@ -90,6 +137,8 @@ class authentication extends Component {
                 ...updatedregisterForm[inputIdentifier]
             };
             updatedFormElement.value = event.target.value;
+            updatedFormElement.valid = this.checkValidity(event.target.value, this.state.registerForm[inputIdentifier].validation),
+            updatedFormElement.touched = true;
             updatedregisterForm[inputIdentifier] = updatedFormElement;
             this.setState({
                 registerForm: updatedregisterForm
@@ -128,10 +177,17 @@ class authentication extends Component {
 
 
         return (
-            <div className={Classes.main}>
+            <div className={Classes.body}>
+                <p className={Classes.title}>
+                    MEHRAB WEATHER APP
+                    <br/>this app making by React
+                    <br />you can the source code in my
+                    <br />
+                    <a className={Classes.link} href='https://github.com/mehrabsafdel/weather-on-map-app-with-react'> Github
+                    </a>                    
+                    </p>
                 {form}
                 {/* <NavLink to="/panel" >next step </NavLink> */}
-                <button onClick={this.nextStep}>next</button>
             </div>
         );
     }

@@ -4,7 +4,8 @@ import { Route, Switch,Redirect } from 'react-router-dom';
 import Panel from './container/Panel/Panel'
 import Manager from './container/Manager/Manager'
 import { connect } from 'react-redux';
-import Mamad from './mamad'
+import Logout from './container/Authentication/Logout/Logout'
+import Classes from './App.css'
 
 class App extends Component {
 
@@ -20,6 +21,7 @@ class App extends Component {
         <Switch> 
           <Route path="/panel" component={Panel} />
           <Route path="/manager" component={Manager} /> 
+          <Route path="/logout" component={Logout} />
           <Redirect to="/panel" />
         </Switch>  
      </div>
@@ -29,17 +31,19 @@ class App extends Component {
 
     else {
       result = (
-                <Switch> 
-          <Route path="/" exact component={Authentication} />
-          <Redirect to="/" />
-        </Switch>  
+        <div>
+          <Switch> 
+            <Route path="/" exact component={Authentication} />
+            <Redirect to="/" />
+          </Switch>  
+        </div>
       )
     }
 
     return (
-      <div>
-{result}
-     </div>
+      <div >
+        {result}
+      </div>
     );
   }
 }
