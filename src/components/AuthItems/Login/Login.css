@@ -2,7 +2,9 @@
     display: flex;
     background-color: rgba(37, 37, 37, 0.801);
     flex-direction: column;
+    width: 300px;
     min-width: 300px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     height: 60%;

@@ -10,3 +10,21 @@
     right: 0;
     z-index: 200;
 }
+
+.links{
+    color: #0468bf;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #510e5985;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration:none;
+}
+
+.links:hover{
+    background-color: #510e59c9;
+}
+
+.active{
+    background-color: #0468bf70;
+}

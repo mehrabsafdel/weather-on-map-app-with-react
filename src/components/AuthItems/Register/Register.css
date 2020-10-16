@@ -2,11 +2,13 @@
     display: flex;
     background-color: rgba(44, 44, 44, 0.61);
     flex-direction: column;
+    width: 300px;
     min-width: 300px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     height: 65%;
-    border-radius: 15px;
+    border-radius: 25px 5px 5px 45px;
     color: white;
 }
 

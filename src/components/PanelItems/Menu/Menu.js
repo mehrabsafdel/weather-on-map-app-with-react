@@ -10,14 +10,10 @@ const menu = props => {
     return (
         <div className={Classes.body}>
             <Profile />
-            <NavLink to="/">PROFILE </NavLink>
-            <NavLink to="/">CORONA </NavLink>
-            <NavLink to="/">WEATHER </NavLink>
-            <NavLink to="/manager">MANAGE CITIES</NavLink>
+            <NavLink to="/" className={Classes.links} activeClassName={Classes.active} exact>CORONA </NavLink>
+            <NavLink to="/panel" className={Classes.links} activeClassName={Classes.active}>WEATHER </NavLink>
+            <NavLink to="/manager" className={Classes.links} activeClassName={Classes.active}>MANAGE CITIES</NavLink>
             <Sound />
-            {/* <label>ADD CITY :</label>
-            <input placeholder="ADD CITY" onChange={(event)=> setCity(event.target.value)}></input>
-            <button onClick={()=>props.addCity(city)}>ADD CITY</button> */}
             {props.children}
         </div>
     )

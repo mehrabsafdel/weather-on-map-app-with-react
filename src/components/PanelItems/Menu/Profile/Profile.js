@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 
 const profile = props => {
     return (
-        <div>
-            <p>!! IMAGE !!</p>
+        <div >
             <p>!! {props.username} !!</p>
         </div>
     )

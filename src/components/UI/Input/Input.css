@@ -24,9 +24,16 @@
 
 .InputElement:focus {
     outline: none;
-    background-color: #ccc;
+    color: white;
+    background-color: #510e597c;
+
 }
 
+.InputElement:hover {
+    outline: none;
+    background-image: linear-gradient(to right, #032ca67c,#510e597c);
+
+}
 .Invalid {
     border: 1px solid red;
     background-color: #FDA49A;
