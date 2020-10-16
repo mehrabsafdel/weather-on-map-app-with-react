@@ -1,10 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import Classes from './Profile.css'
 
 const profile = props => {
     return (
-        <div >
-            <p>!! {props.username} !!</p>
+        <div div className = {
+            Classes.profile
+        } >
+            <p>HELLO <br/>{props.username} </p>
         </div>
     )
 }

@@ -11,7 +11,7 @@ const ForecastWrapper = styled.div`
   padding: 10px;
   margin: 0 5px;
   border-radius: 5px;
-  background-color: red;
+    background-image: linear-gradient(#0468bfa9, #05aff246);
     color: black;
 
   &:first-child {

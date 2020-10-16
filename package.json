@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@szhsin/react-menu": "^0.10.8",
     "autoprefixer": "7.1.6",
     "axios": "^0.20.0",
     "babel-core": "6.26.0",
@@ -38,7 +39,9 @@
     "react": "^16.11.0",
     "react-dev-utils": "^5.0.2",
     "react-dom": "^16.11.0",
+    "react-icons": "^3.11.0",
     "react-mapbox-gl": "^4.8.6",
+    "react-motion-drawer": "^3.1.0",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.1.1",

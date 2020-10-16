@@ -1,7 +1,12 @@
 .Modal {
     position: fixed;
     z-index: 500;
-    background-color: rgba(255, 255, 255, 0.774);
+    /* background-color: rgba(255, 255, 255, 0.774); */
+    background-image: url(../../../../assets/pictures/1540016.jpg);
+    background-position: center;
+    font-family: 'Piedra',
+    cursive;
+    font-size: medium;
     width: 70%;
     border: 1px solid #ccc;
     border-radius: 10px;

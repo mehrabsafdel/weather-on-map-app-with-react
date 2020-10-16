@@ -33,11 +33,6 @@ const Map = (props) => {
       zoom: zoom
     });
 
-// map.setStyle('mapbox://styles/mapbox/' + props.mode);
-
-    // Add navigation control (the +/- zoom buttons)
-    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
     map.on('move', () => {
       setLng(map.getCenter().lng.toFixed(4));
       setLat(map.getCenter().lat.toFixed(4));

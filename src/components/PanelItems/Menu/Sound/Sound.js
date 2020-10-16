@@ -3,7 +3,7 @@ import React from 'react'
 const sound = props => {
     return (
         <div>
-            <p>!! SOUND should be added !!</p>
+            {/* <p>!! SOUND !!</p> */}
         </div>
     )
 }
