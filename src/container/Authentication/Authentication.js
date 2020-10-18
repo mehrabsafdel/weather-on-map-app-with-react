@@ -5,9 +5,11 @@ import Classes from './Authentication.css'
 import { connect } from 'react-redux';
 import * as actions from '../../Store/Action/index';
 import Spinner from '../../components/UI/Spinner/Spinner'
+import AuthImage from '../../components/UI/Image/AuthImage/AuthImage'
 
 class authentication extends Component {
     state = {
+        register: true,
         registerForm: {
             email: {
                 elementType: 'input',
@@ -155,21 +157,41 @@ class authentication extends Component {
         this.props.login(this.state.loginForm.email.value, this.state.loginForm.password.value,false)
     }
 
+    changeform = () => {
+        const oldRegister = this.state.register;
+        this.setState({register : ! oldRegister})
+    }
+
     render() {
-        let form = (
+        let form = null;
+        if (this.state.register) {
+                form = (
             <div className={Classes.main}>
                 <Register
                     form={this.state.registerForm}
                     changed={this.registerInputChangeHandler}
                     submit={this.submit}
-                />
+                    changeform={this.changeform}
+                        />
+                <AuthImage/>
+            </div>
+        )
+        }
+        else {
+                    form = (
+                        <div className={Classes.main}>
+                                            <AuthImage/>
+
                 <Login
                     form={this.state.loginForm}
                     changed={this.loginInputChangeHandler}
                     login={this.login}
+                    changeform={this.changeform}
+
                 />
             </div>
         )
+        }
         
         if (this.props.loading) {
             form = <Spinner />

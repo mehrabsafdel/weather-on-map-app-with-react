@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-width: 300px;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(241, 241, 241, 0.712);
+    background-image: url('../../../../assets/pictures/pngwave.png');
+    opacity: 0.85;
+    background-position: center;
+    background-size: cover;
+}
+
+.main:hover{
+    background-color: rgba(241, 241, 241, 0.863);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 656px) {
+    .main {
+        display: none;
+    }
+
+
+}

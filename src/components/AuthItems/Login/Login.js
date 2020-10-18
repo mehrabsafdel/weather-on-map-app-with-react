@@ -29,6 +29,8 @@ const login = props => {
         <div className={Classes.body}>
             {form}  
             <button onClick={props.login} className={Classes.btn}> LOGIN </button>
+            <p><span onClick={props.changeform} className={Classes.signbtn}>Create an account</span></p>
+
         </div>
     );
 }

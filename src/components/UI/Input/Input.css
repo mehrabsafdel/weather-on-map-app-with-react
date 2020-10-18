@@ -30,6 +30,7 @@
 }
 
 .InputElement:hover {
+    /* 032ca657 */
     outline: none;
     background-image: linear-gradient(to right, #032ca67c,#510e597c);
 

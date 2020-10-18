@@ -30,6 +30,7 @@ const register = props => {
         <div className={Classes.body}>
             {form}
             <button onClick={props.submit} className={Classes.btn}> register </button>
+            <p><span onClick={props.changeform} className={Classes.signbtn}>Have an account</span></p>
         </div>
     );
 }
